@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth/google';
+const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"; // Your backend URL
 
-export const loginWithGoogle = async (token) => {
-  try {
-    const response = await axios.post(API_URL, { token });
-    return response.data;
-  } catch (error) {
-    throw new Error('Login failed: ' + error.message);
+const api = axios.create({
+  baseURL: API_URL,
+  headers: {
+    'Content-Type': 'application/json',
   }
-};
+});
+
+export default api;

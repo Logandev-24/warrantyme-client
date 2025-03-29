@@ -14,5 +14,7 @@ export default defineConfig({
     alias: {
       "@": "/src",
     },
+  },define: {
+    global: 'globalThis' // Polyfill global to globalThis
   }
 });

@@ -1,0 +1,159 @@
+.create-document-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.dashboard {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .create-document-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;      
+    padding: 8px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.create-document-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.new-doc-icon{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+/* document editor page design */
+
+
+.doc-editor-back-btn{
+    background: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.doc-editor-title-input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 24px;
+    outline: none;
+    padding: 8px 0;
+    width: 50%;
+}
+
+.doc-editior-icon{
+    font-size: 18px;
+    display: flex;
+
+}
+
+
+  
+.doc-editor-save-btn, .doc-editor-share-btn, .doc-editor-generate-link-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .doc-editor-save-btn:disabled {
+    background-color: #ccc;
+  }
+  
+  .doc-editor-save-btn:hover, .doc-editor-share-btn:hover, .doc-editor-generate-link-btn:hover {
+    background-color: #444;
+  }
+  
+
+
+  /* login page design */
+
+  /* Container for the login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+  
+  /* Left Side - App Info */
+  .login-info {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: left;
+    max-width: 700px;
+  }
+  
+  .login-info h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .login-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Right Side - Login Box */
+  .login-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 40px;
+  }
+  
+  .login-box h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: #4285F4;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #357ae8;
+  }
+  

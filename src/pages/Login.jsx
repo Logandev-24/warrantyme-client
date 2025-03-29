@@ -4,6 +4,8 @@ import { useAuth } from "../hooks/useAuth";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+ import documentCover from "../assets/document.jpg";
+
 const Login = () => {
   const navigate = useNavigate();
   const { user, setUser } = useAuth();
@@ -40,9 +42,22 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login with Google</h1>
-      <button onClick={handleLogin}>Sign in with Google</button>
+    <div className="login-container">
+      {/* Left Side - App Information */}
+      <div className="login-info">
+        <img src={documentCover} alt="document image" className="document-image" />
+        <h1>Welcome to Logans Document Editor</h1>
+        <p>
+          Create, edit, and collaborate on documents seamlessly with our online document editor. 
+          Share your work, generate links, and save documents securely on Google Drive.
+        </p>
+      </div>
+
+      {/* Right Side - Login Section */}
+      <div className="login-box">
+        <h2>Login to Get Started</h2>
+        <button onClick={handleLogin} className="login-btn">Sign in with Google</button>
+      </div>
     </div>
   );
 };
