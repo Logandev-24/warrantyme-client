@@ -10,7 +10,7 @@ import { IoMdShare } from "react-icons/io";
 const DocumentEditor = () => {
   const navigate = useNavigate();
   const { fileId } = useParams(); // Use fileId from the URL params
-  const [content, setContent] = useState(" ");
+  const [content, setContent] = useState("Write something...");
   const [title, setTitle] = useState("");
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
